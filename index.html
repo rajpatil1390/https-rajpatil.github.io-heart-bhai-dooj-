@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Heart ❤️ Animation | Bhai Dooj Special</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Bhai Dooj message style */
+    .festival-message {
+      position: fixed;
+      bottom: 70px;
+      width: 100%;
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-size: 26px;
+      color: #ffd1dc;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-shadow: 0 0 10px #ff66b2, 0 0 20px #ff1493, 0 0 40px #ff66b2;
+      animation: glowText 2.5s ease-in-out infinite;
+    }
+
+    /* Signature style */
+    .signature {
+      position: fixed;
+      bottom: 20px;
+      width: 100%;
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      font-size: 22px;
+      color: #ff69b4;
+      letter-spacing: 1px;
+      text-shadow: 0 0 10px #ff9ecf, 0 0 20px #ff69b4;
+      animation: pulseGlow 2.5s ease-in-out infinite;
+    }
+
+    /* Animations */
+    @keyframes glowText {
+      0%, 100% {
+        text-shadow: 0 0 10px #ff99cc, 0 0 20px #ff66b2, 0 0 40px #ff1493;
+        transform: scale(1);
+      }
+      50% {
+        text-shadow: 0 0 20px #ff3399, 0 0 50px #ff1493, 0 0 70px #ff3399;
+        transform: scale(1.08);
+      }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% {
+        text-shadow: 0 0 10px #ff9ecf, 0 0 20px #ff69b4;
+        transform: scale(1);
+      }
+      50% {
+        text-shadow: 0 0 20px #ff69b4, 0 0 40px #ff2e89;
+        transform: scale(1.05);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <canvas id="pinkboard"></canvas>
+  </div>
+
+  <!-- ✨ Bhai Dooj Wishes -->
+  <div class="festival-message">🌸 Happy Bhai Dooj! 🌸<br>from Raj 💛</div>
+
+  <!-- 💖 Signature -->
+  <div class="signature">Raj’s Art 💖</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
